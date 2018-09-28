@@ -1,9 +1,11 @@
 # Overview
 
-This is a simple poc using [mockito], [ok-http-client] and [ok-mock-server]
+This is a simple poc using [gRPC].
 
-1. Execute `mvn compile`
+## Set up
 
-[mockito]: https://site.mockito.org/
-[ok-http-client]: http://square.github.io/okhttp/
-[ok-mock-server]: https://github.com/square/okhttp/tree/master/mockwebserver
+1. Execute `mvn compile` to generate the grpc classes.
+2. Run `ServiceApplication`
+3. Run `ClientApplication`
+
+[gRPC]: https://grpc.io/
