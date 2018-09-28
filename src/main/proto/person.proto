@@ -1,0 +1,18 @@
+syntax = "proto3";
+option java_multiple_files = true;
+package server.domain.person;
+
+message PersonRequest {
+  string name = 1;
+  int32 age = 2;
+}
+
+message PersonResponse {
+  int32 id = 1;
+  string name = 2;
+  int32 age = 3;
+}
+
+service PersonService {
+ rpc createPerson(PersonRequest) returns (PersonResponse);
+}
